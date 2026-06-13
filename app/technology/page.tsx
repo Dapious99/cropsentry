@@ -85,7 +85,7 @@ export default function TechnologyPage() {
               <li>• <strong>NVIDIA NeMo</strong> — fine-tuning of language models for African-language advice generation.</li>
               <li>• <strong>RAPIDS</strong> — GPU-accelerated data pipelines for image preprocessing at scale.</li>
               <li>• <strong>Jetson Nano / Orin</strong> — planned edge deployment for extension-officer field kits and farm gateways.</li>
-              <li>• <strong>NVIDIA Inception</strong> — applied; aligning with NVIDIA's startup AI program for technical mentorship.</li>
+              <li>• <strong>NVIDIA Inception</strong> — applied; aligning with NVIDIA&apos;s startup AI program for technical mentorship.</li>
             </ul>
           </div>
         </div>

@@ -102,7 +102,7 @@ export default function SolutionsPage() {
             <p className="eyebrow">Core capabilities</p>
             <h2 className="mt-4 text-4xl md:text-5xl">Everything in one app.</h2>
             <p className="mt-5 text-muted-foreground">
-              Whether you're scanning your first leaf or monitoring 10,000 farms,
+              Whether you&apos;re scanning your first leaf or monitoring 10,000 farms,
               CropSentry brings detection, diagnosis, and decision support into a single,
               affordable workflow.
             </p>
@@ -141,7 +141,7 @@ export default function SolutionsPage() {
           <p className="eyebrow">Ready to deploy</p>
           <h2 className="mt-4 text-4xl md:text-5xl">Find the right fit for your organization.</h2>
           <p className="mt-5 text-muted-foreground">
-            Tell us about your farms, members, or out-grower program — we'll put together
+            Tell us about your farms, members, or out-grower program — we&apos;ll put together
             a pilot proposal within a week.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

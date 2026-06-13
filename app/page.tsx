@@ -123,7 +123,7 @@ function Problem() {
         </div>
         <div className="space-y-5 text-base text-muted-foreground md:pt-10">
           <p>
-            Smallholder farmers across Sub-Saharan Africa produce most of the continent's
+            Smallholder farmers across Sub-Saharan Africa produce most of the continent&apos;s
             food, yet diseases like Cassava Mosaic Virus, Fall Armyworm, Maize Lethal
             Necrosis, and Tomato Blight wipe out 20–40% of yields every season.
           </p>
@@ -160,7 +160,7 @@ function Solution() {
           <p className="eyebrow">The solution</p>
           <h2 className="mt-4 text-4xl md:text-5xl">A pocket-sized plant doctor.</h2>
           <p className="mt-5 text-lg text-muted-foreground">
-            Snap a photo of a leaf. In under 3 seconds, CropSentry's AI identifies the
+            Snap a photo of a leaf. In under 3 seconds, CropSentry&apos;s AI identifies the
             disease, scores severity, and gives the farmer a clear, low-cost action plan
             in their language.
           </p>
@@ -260,7 +260,7 @@ function Features() {
 /* ──────────────── How it works ──────────────── */
 function HowItWorks() {
   const steps = [
-    { n: "01", t: "Open CropSentry on your phone", d: "Tap 'Scan'. The camera opens with a leaf guide overlay." },
+    { n: "01", t: "Open CropSentry on your phone", d: "Tap &apos;Scan&apos;. The camera opens with a leaf guide overlay." },
     { n: "02", t: "Photograph a single leaf", d: "Our AI handles the rest — no expertise needed." },
     { n: "03", t: "Get a diagnosis in 3 seconds", d: "Disease name, severity, confidence score, and treatment plan." },
     { n: "04", t: "Act early. Save the harvest.", d: "Follow the plan or share it with your local extension officer." },
@@ -359,7 +359,7 @@ function Market() {
         <div className="space-y-5">
           {[
             { k: "Target users", v: "Smallholder farmers, agronomists, cooperatives, agribusinesses, agri-NGOs" },
-            { k: "Launch markets", v: "Nigeria, Ghana, Kenya, Rwanda, Côte d'Ivoire" },
+            { k: "Launch markets", v: "Nigeria, Ghana, Kenya, Rwanda, Côte d&apos;Ivoire" },
             { k: "Revenue model", v: "Freemium app · Cooperative subscriptions · Enterprise API for agribusinesses · NGO/government licensing" },
             { k: "Growth plan", v: "Pilot in Lagos & Oyo State (2026), expand to West Africa (2027), Pan-African (2028)" },
           ].map(({ k, v }) => (
@@ -418,14 +418,14 @@ function Roadmap() {
     ["Phase 2", "Q1 2026", "Closed beta", "Deploy with 3 cooperatives in Lagos & Oyo State. Iterate weekly."],
     ["Phase 3", "Q3 2026", "Public launch", "Open app to all of Nigeria. Add Yoruba, Hausa, Igbo languages."],
     ["Phase 4", "2027", "Cloud scale", "AWS production deployment, GPU inference, extension officer dashboard."],
-    ["Phase 5", "2027", "Regional expansion", "Ghana, Kenya, Rwanda, Côte d'Ivoire. New crops: rice, cocoa, plantain."],
+    ["Phase 5", "2027", "Regional expansion", "Ghana, Kenya, Rwanda, Côte d&apos;Ivoire. New crops: rice, cocoa, plantain."],
     ["Phase 6", "2028", "Pan-African network", "Continent-wide outbreak intelligence and enterprise API."],
   ];
   return (
     <section className="section-pad bg-secondary/40">
       <div className="container-page">
         <p className="eyebrow">Roadmap</p>
-        <h2 className="mt-4 text-4xl md:text-5xl">What we're building next.</h2>
+        <h2 className="mt-4 text-4xl md:text-5xl">What we&apos;re building next.</h2>
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {phases.map(([p, when, t, d]) => (
             <div key={p} className="card-surface p-6">
@@ -453,7 +453,7 @@ function WhyNow() {
           The first time mobile AI, climate pressure, and food security collide.
         </h2>
         <div className="mt-8 grid gap-6 text-muted-foreground md:grid-cols-3">
-          <p><strong className="text-foreground">Mobile reach.</strong> Smartphone penetration in our launch markets has crossed 80%, putting AI in every farmer's hand.</p>
+          <p><strong className="text-foreground">Mobile reach.</strong> Smartphone penetration in our launch markets has crossed 80%, putting AI in every farmer&apos;s hand.</p>
           <p><strong className="text-foreground">Climate stress.</strong> Shifting rainfall is changing disease patterns faster than extension services can keep up.</p>
           <p><strong className="text-foreground">AI is ready.</strong> Computer vision is now accurate, small, and cheap enough to run offline on a $80 phone.</p>
         </div>
@@ -508,11 +508,11 @@ function CTA() {
           <div className="grid items-center gap-8 md:grid-cols-[1.5fr_1fr]">
             <div>
               <h2 className="text-4xl text-primary-foreground md:text-5xl">
-                Help us protect Africa's next harvest.
+                Help us protect Africa&apos;s next harvest.
               </h2>
               <p className="mt-4 max-w-xl text-primary-foreground/80">
-                Whether you're a farmer, an agronomist, a cooperative, or an investor —
-                we'd love to talk.
+                Whether you&apos;re a farmer, an agronomist, a cooperative, or an investor —
+                we&apos;d love to talk.
               </p>
             </div>
             <div className="flex flex-wrap gap-3 md:justify-end">

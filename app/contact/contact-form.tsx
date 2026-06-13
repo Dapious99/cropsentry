@@ -11,9 +11,9 @@ export function ContactForm() {
       <div className="container-page grid gap-12 lg:grid-cols-2 lg:gap-20">
         <div>
           <p className="eyebrow">Get in touch</p>
-          <h1 className="mt-4 text-5xl md:text-6xl">Let's talk.</h1>
+          <h1 className="mt-4 text-5xl md:text-6xl">Let&apos;s talk.</h1>
           <p className="mt-6 text-lg text-muted-foreground">
-            Whether you're a farmer, cooperative, agronomist, investor, or future teammate —
+            Whether you&apos;re a farmer, cooperative, agronomist, investor, or future teammate —
             we read every message.
           </p>
 
@@ -56,7 +56,7 @@ export function ContactForm() {
         <div className="card-surface p-8 md:p-10">
           {sent ? (
             <div className="py-12 text-center">
-              <h2 className="text-3xl">Thanks — we'll be in touch.</h2>
+              <h2 className="text-3xl">Thanks — we&apos;ll be in touch.</h2>
               <p className="mt-3 text-muted-foreground">We typically reply within 48 hours.</p>
             </div>
           ) : (
@@ -75,7 +75,7 @@ export function ContactForm() {
               <Field label="Organization (optional)" name="org" />
               <div>
                 <label className="text-sm font-medium" htmlFor="topic">
-                  I'm interested in…
+                  I&apos;m interested in…
                 </label>
                 <select
                   id="topic"

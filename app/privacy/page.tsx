@@ -47,7 +47,7 @@ export default function PrivacyPage() {
 
           <Section title="3. How we use your data">
             We use your data to provide diagnoses, improve our AI models, send outbreak
-            alerts, and notify you about updates you've opted into. We never sell personal data.
+            alerts, and notify you about updates you&apos;ve opted into. We never sell personal data.
           </Section>
 
           <Section title="4. Your scan images">

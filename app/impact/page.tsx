@@ -64,7 +64,7 @@ export default function ImpactPage() {
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
             CropSentry exists to put a real, measurable dent in the 40% of African
-            harvests lost to preventable crop disease each year. This is what we're
+            harvests lost to preventable crop disease each year. This is what we&apos;re
             building toward — and how we measure ourselves.
           </p>
         </div>
@@ -72,7 +72,7 @@ export default function ImpactPage() {
 
       <section className="section-pad bg-secondary/40">
         <div className="container-page">
-          <p className="eyebrow">The numbers we're chasing</p>
+          <p className="eyebrow">The numbers we&apos;re chasing</p>
           <h2 className="mt-4 text-4xl md:text-5xl">The scale of the problem.</h2>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {stats.map(([h, b]) => (

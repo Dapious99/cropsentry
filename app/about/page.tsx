@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The team building CropSentry — agronomists, AI engineers, and product builders working to protect Africa's harvests.",
+    "The team building CropSentry — agronomists, AI engineers, and product builders working to protect Africa&apos;s harvests.",
   openGraph: {
     title: "About — CropSentry",
     description: "Meet the team behind CropSentry.",
@@ -29,7 +29,7 @@ const team = [
     img: "/team-eng.jpg",
     linkedin: "#",
   },
- ];
+];
 
 export default function AboutPage() {
   return (
@@ -40,7 +40,7 @@ export default function AboutPage() {
           <h1 className="mt-4 text-5xl md:text-6xl">A small team with a serious mission.</h1>
           <p className="mt-6 text-lg text-muted-foreground">
             CropSentry Ltd is a Nigerian agritech company building computer-vision tools
-            for the farmers who feed Africa. We're a mix of agronomists, AI engineers, and
+            for the farmers who feed Africa. We&apos;re a mix of agronomists, AI engineers, and
             product builders who believe technology should reach the last mile — not just
             the largest farms.
           </p>
@@ -85,17 +85,17 @@ export default function AboutPage() {
           </div>
           <div className="space-y-5 text-muted-foreground">
             <p>
-              In 2023, Adebola visited his family's cassava farm and found a quarter of
+              In 2023, Adebola visited his family&apos;s cassava farm and found a quarter of
               the field destroyed by mosaic virus. By the time the local extension officer
               arrived — two weeks later — the disease had spread to three neighboring farms.
             </p>
             <p>
-              That experience isn't unique. It plays out millions of times every season
+              That experience isn&apos;t unique. It plays out millions of times every season
               across the continent. We started CropSentry because we believe AI can put a
-              plant doctor in every farmer's pocket — affordably, in their language, today.
+              plant doctor in every farmer&apos;s pocket — affordably, in their language, today.
             </p>
             <p>
-              We're incorporated in Lagos, Nigeria as CropSentry Ltd, and we're hiring.
+              We&apos;re incorporated in Lagos, Nigeria as CropSentry Ltd, and we&apos;re hiring.
               If you care about food security, AI for good, or building products for
               emerging markets —{" "}
               <Link href="/contact" className="text-leaf underline-offset-4 hover:underline">
