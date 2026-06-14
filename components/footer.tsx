@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -8,7 +9,7 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2.5">
-              <img src="/logo.png" alt="" width={32} height={32} className="h-8 w-8" />
+              <Image src="/logo.png" alt="" width={32} height={32} className="h-8 w-8" />
               <span className="font-display text-lg tracking-tight">CropSentry</span>
             </Link>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">

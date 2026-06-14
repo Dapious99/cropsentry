@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -20,7 +21,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="container-page flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5" aria-label="CropSentry home">
-          <img src="/logo.png" alt="" width={32} height={32} className="h-8 w-8" />
+          <Image src="/logo.png" alt="" width={32} height={32} className="h-8 w-8" />
           <span className="font-display text-lg tracking-tight">CropSentry</span>
         </Link>
 
