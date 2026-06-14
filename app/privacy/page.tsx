@@ -22,9 +22,12 @@ export default function PrivacyPage() {
 
         <div className="mt-10 space-y-8 text-muted-foreground">
           <Section title="1. Who we are">
-            CropSentry Ltd ("CropSentry", "we", "us") is a Nigerian company building
-            AI-powered tools for crop disease detection. We can be reached at{" "}
-            <a href="mailto:hello@cropsentry.ai" className="text-leaf underline-offset-4 hover:underline">
+            CropSentry Ltd (&quot;CropSentry&quot;, &quot;we&quot;, &quot;us&quot;) is a Nigerian
+            company building AI-powered tools for crop disease detection. We can be reached at{" "}
+            <a
+              href="mailto:hello@cropsentry.ai"
+              className="text-leaf underline-offset-4 hover:underline"
+            >
               hello@cropsentry.ai
             </a>
             .
@@ -40,37 +43,37 @@ export default function PrivacyPage() {
                 permission), crop type, scan timestamp.
               </li>
               <li>
-                <strong>Device data:</strong> device model, OS, app version, anonymized usage events.
+                <strong>Device data:</strong> device model, OS, app version, anonymized usage
+                events.
               </li>
             </ul>
           </Section>
 
           <Section title="3. How we use your data">
-            We use your data to provide diagnoses, improve our AI models, send outbreak
-            alerts, and notify you about updates you&apos;ve opted into. We never sell personal data.
+            We use your data to provide diagnoses, improve our AI models, send outbreak alerts, and
+            notify you about updates you&apos;ve opted into. We never sell personal data.
           </Section>
 
           <Section title="4. Your scan images">
-            Leaf images you upload may be used (anonymized and stripped of metadata) to
-            train and improve our disease detection models. You can opt out at any time
-            from your account settings.
+            Leaf images you upload may be used (anonymized and stripped of metadata) to train and
+            improve our disease detection models. You can opt out at any time from your account
+            settings.
           </Section>
 
           <Section title="5. Sharing">
-            We share data with infrastructure providers (e.g., AWS) under strict
-            data-processing agreements. We may share anonymized, aggregated regional
-            disease data with public-health and agricultural authorities to support
-            outbreak response.
+            We share data with infrastructure providers (e.g., AWS) under strict data-processing
+            agreements. We may share anonymized, aggregated regional disease data with public-health
+            and agricultural authorities to support outbreak response.
           </Section>
 
           <Section title="6. Security">
-            Data is encrypted in transit (TLS) and at rest (AES-256). Access is restricted
-            to authorized personnel and audited.
+            Data is encrypted in transit (TLS) and at rest (AES-256). Access is restricted to
+            authorized personnel and audited.
           </Section>
 
           <Section title="7. Your rights">
-            You may request a copy of your data, correct it, or delete your account at any
-            time by emailing{" "}
+            You may request a copy of your data, correct it, or delete your account at any time by
+            emailing{" "}
             <a href="mailto:hello@cropsentry.ai" className="text-leaf">
               hello@cropsentry.ai
             </a>
