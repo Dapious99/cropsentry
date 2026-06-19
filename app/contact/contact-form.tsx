@@ -1,11 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Mail, MapPin, MessageSquare, Phone } from "lucide-react";
 
 export function ContactForm() {
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
+
+  useEffect(() => {
+    if (!sent) return;
+    const timer = setTimeout(() => setSent(false), 3000);
+    return () => clearTimeout(timer);
+  }, [sent]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -13,7 +19,7 @@ export function ContactForm() {
     const form = e.currentTarget;
     const data = new FormData(form);
     try {
-      await fetch("https://formsubmit.co/ajax/petra@cropsentry.site", {
+      await fetch("https://formsubmit.co/ajax/23dc39080c3038524fdcc20e10a49157", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(Object.fromEntries(data.entries())),
@@ -91,7 +97,11 @@ export function ContactForm() {
         <div className="card-surface p-8 md:p-10">
           {sent ? (
             <div className="py-12 text-center">
-              <h2 className="text-3xl">Thanks — we&apos;ll be in touch.</h2>
+              <svg className="mx-auto h-14 w-14 text-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="m9 12 2 2 4-4" />
+              </svg>
+              <h2 className="mt-4 text-3xl">Thanks — we&apos;ll be in touch.</h2>
               <p className="mt-3 text-muted-foreground">We typically reply within 48 hours.</p>
             </div>
           ) : (
