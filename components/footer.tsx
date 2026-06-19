@@ -17,8 +17,16 @@ export function SiteFooter() {
               Built for African smallholder farmers and agribusinesses.
             </p>
             <p className="mt-6 text-xs text-muted-foreground">
-              Built by CropSentry Ltd · Lagos, Nigeria
+              Built by CropSentry Ltd · Enugu, Nigeria
             </p>
+            <div className="mt-3 flex gap-4">
+              <a href="https://x.com/agricrave?s=21" target="_blank" rel="noopener noreferrer" className="text-xs text-muted-foreground hover:text-foreground">
+                𝕏 @agricrave
+              </a>
+              <a href="https://www.facebook.com/share/1Jqz5JZto4/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-xs text-muted-foreground hover:text-foreground">
+                Facebook
+              </a>
+            </div>
           </div>
 
           <div>
@@ -45,8 +53,8 @@ export function SiteFooter() {
         <div className="mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
           <p>© {year} CropSentry Ltd. All rights reserved.</p>
           <p>
-            <a href="mailto:hello@cropsentry.ai" className="hover:text-foreground">
-              hello@cropsentry.ai
+            <a href="mailto:petra@cropsentry.site" className="hover:text-foreground">
+              petra@cropsentry.site
             </a>
           </p>
         </div>

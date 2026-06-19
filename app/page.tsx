@@ -98,7 +98,7 @@ function Hero() {
 
 /* ──────────────── Trust logos ──────────────── */
 function Logos() {
-  const items = ["Pilot farms in Lagos", "IITA collaboration (proposed)", "FMARD aligned", "AWS Activate", "NVIDIA Inception (applied)"];
+  const items = ["Pilot farms in Enugu", "IITA collaboration (proposed)", "FMARD aligned", "AWS Activate", "NVIDIA Inception (applied)"];
   return (
     <section className="border-y border-border bg-secondary/40">
       <div className="container-page flex flex-wrap items-center justify-between gap-6 py-6 text-xs uppercase tracking-[0.18em] text-muted-foreground">
@@ -398,7 +398,7 @@ function Traction() {
             ["12,000+", "leaf images labeled in our training dataset"],
             ["3", "pilot cooperatives signed letters of interest"],
             ["40+", "diseases targeted across maize, cassava, tomato, cocoa"],
-            ["Beta Q1", "2026 — limited rollout in Lagos & Oyo State"],
+            ["Beta Q1", "2026 — limited rollout in Enugu & Anambra State"],
           ].map(([h, b]) => (
             <div key={h} className="card-surface p-6">
               <p className="font-display text-3xl text-leaf md:text-4xl">{h}</p>
@@ -415,7 +415,7 @@ function Traction() {
 function Roadmap() {
   const phases = [
     ["Phase 1", "Q4 2025", "MVP & model training", "Build core scanning app, train on 50k+ images, recruit pilot farms."],
-    ["Phase 2", "Q1 2026", "Closed beta", "Deploy with 3 cooperatives in Lagos & Oyo State. Iterate weekly."],
+    ["Phase 2", "Q1 2026", "Closed beta", "Deploy with 3 cooperatives in Enugu & Anambra State. Iterate weekly."],
     ["Phase 3", "Q3 2026", "Public launch", "Open app to all of Nigeria. Add Yoruba, Hausa, Igbo languages."],
     ["Phase 4", "2027", "Cloud scale", "AWS production deployment, GPU inference, extension officer dashboard."],
     ["Phase 5", "2027", "Regional expansion", "Ghana, Kenya, Rwanda, Côte d&apos;Ivoire. New crops: rice, cocoa, plantain."],
@@ -465,8 +465,8 @@ function WhyNow() {
 /* ──────────────── Team ──────────────── */
 function Team() {
   const leaders = [
-    { name: "Adebola Okonkwo", role: "Co-founder & CEO", bio: "Agricultural economist. Former programs lead at a Nigerian agritech cooperative. Grew up on a cassava farm in Oyo State.", img: "/team-founder.jpg", linkedin: "#" },
-    { name: "Chiamaka Eze", role: "Co-founder & CTO", bio: "ML engineer with 6 years at fintech and computer-vision startups. MSc Computer Science. Leads model development and infrastructure.", img: "/team-eng.jpg", linkedin: "#" },
+    { name: "Petra Ukwueze", role: "Co-founder & CEO", bio: "Agricultural entrepreneur from Enugu State. Leads CropSentry's vision, farmer partnerships, and community outreach across South-East Nigeria.", img: "/team-founder.jpg", x: "https://x.com/agoozziem?s=11", facebook: "https://www.facebook.com/share/1DHxmR5tX6/?mibextid=wwXIfr" },
+    { name: "Chiamaka Eze", role: "Co-founder & CTO", bio: "ML engineer with 6 years at fintech and computer-vision startups. MSc Computer Science. Leads model development and infrastructure.", img: "/team-eng.jpg", x: "", facebook: "" },
   ];
   return (
     <section className="section-pad bg-secondary/40">
@@ -487,9 +487,18 @@ function Team() {
                 <h3 className="text-xl">{m.name}</h3>
                 <p className="text-sm text-leaf">{m.role}</p>
                 <p className="mt-3 text-sm text-muted-foreground">{m.bio}</p>
-                <a href={m.linkedin} className="mt-4 inline-flex items-center gap-2 text-sm text-foreground hover:text-leaf">
-                  {/* <Linkedin className="h-4 w-4" /> LinkedIn */}
-                </a>
+                <div className="mt-4 flex gap-4">
+                  {m.x && (
+                    <a href={m.x} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-leaf">
+                      𝕏 Twitter
+                    </a>
+                  )}
+                  {m.facebook && (
+                    <a href={m.facebook} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-leaf">
+                      Facebook
+                    </a>
+                  )}
+                </div>
               </div>
             </article>
           ))}

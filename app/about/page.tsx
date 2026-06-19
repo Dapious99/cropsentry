@@ -16,18 +16,20 @@ export const metadata: Metadata = {
 
 const team = [
   {
-    name: "Adebola Okonkwo",
+    name: "Petra Ukwueze",
     role: "Co-founder & CEO",
-    bio: "Agricultural economist (Univ. of Ibadan). Former programs lead at a Nigerian agritech cooperative. Grew up on a cassava farm in Oyo State.",
+    bio: "Agricultural entrepreneur and agritech advocate from Enugu State. Leads CropSentry's vision, farmer partnerships, and community outreach across South-East Nigeria.",
     img: "/team-founder.jpg",
-    linkedin: "#",
+    x: "https://x.com/agoozziem?s=11",
+    facebook: "https://www.facebook.com/share/1DHxmR5tX6/?mibextid=wwXIfr",
   },
   {
     name: "Chiamaka Eze",
     role: "Co-founder & CTO",
     bio: "ML engineer with 6 years at fintech and computer-vision startups. MSc Computer Science. Leads model development and infrastructure.",
     img: "/team-eng.jpg",
-    linkedin: "#",
+    x: "",
+    facebook: "",
   },
 ];
 
@@ -65,11 +67,18 @@ export default function AboutPage() {
                   <h3 className="text-xl">{m.name}</h3>
                   <p className="text-sm text-leaf">{m.role}</p>
                   <p className="mt-3 text-sm text-muted-foreground">{m.bio}</p>
-                  <a
-                    href={m.linkedin}
-                    className="mt-4 inline-flex items-center gap-2 text-sm text-foreground hover:text-leaf"
-                  >
-                  </a>
+                  <div className="mt-4 flex gap-4">
+                    {m.x && (
+                      <a href={m.x} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-leaf">
+                        𝕏 Twitter
+                      </a>
+                    )}
+                    {m.facebook && (
+                      <a href={m.facebook} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-leaf">
+                        Facebook
+                      </a>
+                    )}
+                  </div>
                 </div>
               </article>
             ))}
@@ -85,7 +94,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-5 text-muted-foreground">
             <p>
-              In 2023, Adebola visited his family&apos;s cassava farm and found a quarter of
+              In 2023, Petra visited her family&apos;s cassava farm in Enugu State and found a quarter of
               the field destroyed by mosaic virus. By the time the local extension officer
               arrived — two weeks later — the disease had spread to three neighboring farms.
             </p>
@@ -95,7 +104,7 @@ export default function AboutPage() {
               plant doctor in every farmer&apos;s pocket — affordably, in their language, today.
             </p>
             <p>
-              We&apos;re incorporated in Lagos, Nigeria as CropSentry Ltd, and we&apos;re hiring.
+              We&apos;re incorporated in Enugu, Nigeria as CropSentry Ltd, and we&apos;re hiring.
               If you care about food security, AI for good, or building products for
               emerging markets —{" "}
               <Link href="/contact" className="text-leaf underline-offset-4 hover:underline">

@@ -1,10 +1,28 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, MapPin, MessageSquare } from "lucide-react";
+import { Mail, MapPin, MessageSquare, Phone } from "lucide-react";
 
 export function ContactForm() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setSending(true);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    try {
+      await fetch("https://formsubmit.co/ajax/petra@cropsentry.site", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(data.entries())),
+      });
+    } finally {
+      setSent(true);
+      setSending(false);
+    }
+  }
 
   return (
     <section className="section-pad">
@@ -13,8 +31,8 @@ export function ContactForm() {
           <p className="eyebrow">Get in touch</p>
           <h1 className="mt-4 text-5xl md:text-6xl">Let&apos;s talk.</h1>
           <p className="mt-6 text-lg text-muted-foreground">
-            Whether you&apos;re a farmer, cooperative, agronomist, investor, or future teammate —
-            we read every message.
+            Whether you&apos;re a farmer, cooperative, agronomist, investor, or future teammate — we
+            read every message.
           </p>
 
           <div className="mt-10 space-y-5">
@@ -24,8 +42,22 @@ export function ContactForm() {
               </span>
               <div>
                 <p className="text-sm text-muted-foreground">Email</p>
-                <a href="mailto:hello@cropsentry.ai" className="text-base font-medium hover:text-leaf">
-                  hello@cropsentry.ai
+                <a
+                  href="mailto:petra@cropsentry.site"
+                  className="text-base font-medium hover:text-leaf"
+                >
+                  petra@cropsentry.site
+                </a>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <span className="grid h-10 w-10 place-items-center rounded-xl bg-leaf/15 text-leaf">
+                <Phone className="h-5 w-5" />
+              </span>
+              <div>
+                <p className="text-sm text-muted-foreground">Phone</p>
+                <a href="tel:+2349049585154" className="text-base font-medium hover:text-leaf">
+                  09049585154
                 </a>
               </div>
             </div>
@@ -35,7 +67,7 @@ export function ContactForm() {
               </span>
               <div>
                 <p className="text-sm text-muted-foreground">Headquarters</p>
-                <p className="text-base font-medium">Lagos, Nigeria</p>
+                <p className="text-base font-medium">No 3 Chief Agbo Street, Nkwo Nike, Enugu</p>
                 <p className="text-sm text-muted-foreground">CropSentry Ltd · RC pending</p>
               </div>
             </div>
@@ -44,9 +76,12 @@ export function ContactForm() {
                 <MessageSquare className="h-5 w-5" />
               </span>
               <div>
-                <p className="text-sm text-muted-foreground">Press & partnerships</p>
-                <a href="mailto:partners@cropsentry.ai" className="text-base font-medium hover:text-leaf">
-                  partners@cropsentry.ai
+                <p className="text-sm text-muted-foreground">Press &amp; partnerships</p>
+                <a
+                  href="mailto:petra@cropsentry.site"
+                  className="text-base font-medium hover:text-leaf"
+                >
+                  petra@cropsentry.site
                 </a>
               </div>
             </div>
@@ -60,13 +95,7 @@ export function ContactForm() {
               <p className="mt-3 text-muted-foreground">We typically reply within 48 hours.</p>
             </div>
           ) : (
-            <form
-              onSubmit={(e: React.FormEvent) => {
-                e.preventDefault();
-                setSent(true);
-              }}
-              className="space-y-5"
-            >
+            <form onSubmit={handleSubmit} className="space-y-5">
               <h2 className="text-2xl">Send us a message</h2>
               <div className="grid gap-5 md:grid-cols-2">
                 <Field label="Name" name="name" required />
@@ -102,8 +131,12 @@ export function ContactForm() {
                   className="mt-2 w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ring"
                 />
               </div>
-              <button type="submit" className="btn-primary w-full md:w-auto">
-                Send message
+              <button
+                type="submit"
+                disabled={sending}
+                className="btn-primary w-full md:w-auto disabled:opacity-60"
+              >
+                {sending ? "Sending…" : "Send message"}
               </button>
             </form>
           )}

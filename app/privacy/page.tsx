@@ -25,10 +25,10 @@ export default function PrivacyPage() {
             CropSentry Ltd (&quot;CropSentry&quot;, &quot;we&quot;, &quot;us&quot;) is a Nigerian
             company building AI-powered tools for crop disease detection. We can be reached at{" "}
             <a
-              href="mailto:hello@cropsentry.ai"
+              href="mailto:petra@cropsentry.site"
               className="text-leaf underline-offset-4 hover:underline"
             >
-              hello@cropsentry.ai
+              petra@cropsentry.site
             </a>
             .
           </Section>
@@ -74,8 +74,8 @@ export default function PrivacyPage() {
           <Section title="7. Your rights">
             You may request a copy of your data, correct it, or delete your account at any time by
             emailing{" "}
-            <a href="mailto:hello@cropsentry.ai" className="text-leaf">
-              hello@cropsentry.ai
+            <a href="mailto:petra@cropsentry.site" className="text-leaf">
+              petra@cropsentry.site
             </a>
             . We respond within 30 days.
           </Section>

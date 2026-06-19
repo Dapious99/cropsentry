@@ -56,8 +56,8 @@ export default function TermsPage() {
           </Section>
           <Section title="9. Contact">
             Questions?{" "}
-            <a href="mailto:hello@cropsentry.ai" className="text-leaf underline-offset-4 hover:underline">
-              hello@cropsentry.ai
+            <a href="mailto:petra@cropsentry.site" className="text-leaf underline-offset-4 hover:underline">
+              petra@cropsentry.site
             </a>
           </Section>
         </div>
